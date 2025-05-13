@@ -1,0 +1,246 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}.container{
+    border: 2px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Navigation bar */
+header{
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.logo p{
+    font-family: 'Arizonia', cursive;
+    font-size: 30px;
+
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 5px;
+    
+}
+
+nav li{
+    display: inline-block
+}
+
+.navbar{
+    padding: 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Title */
+
+.sec1{
+        margin-top: 45px;
+        text-align: center;
+        font-family: 'Arizonia', cursive;
+        font-size: 25px;
+}
+
+.sec1 p{
+    color: rgb(112, 112, 112);
+}
+
+/* Table */
+
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+
+/* box1 Style*/
+
+.box1{
+    border: 2px solid black;
+    border-right: none;
+    border-left: none;
+    width: 30%;
+}
+.box h3{
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+.project{
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+
+
+/* box2 Style*/
+
+.box2{
+    border: 2px solid black;
+    border-right: none;
+    width: 40%;
+
+}
+
+.workExp{
+        border-bottom: 2px solid black;
+         padding: 10px;
+}
+.workExp p{
+    padding-bottom: 15px;
+}
+
+.box2 a{
+        text-decoration: none;
+        color: rgb(0, 102, 255);
+       
+}
+
+
+/* box3 Style*/
+
+
+.box3{
+    border: 2px solid black;
+        border-right: none;
+    width: 30%;
+}
+
+.box3 h3{
+        padding: 10px;
+
+}
+.box3 p{
+        padding: 10px;
+}
+.box3 a{
+        padding: 10px;
+}
+
+/* Comment Section */
+
+.RT h3{
+    margin: 45px;
+     font-family: 'Arizonia', cursive;
+    font-size: 35px;
+}
+.Review{
+    display: flex;
+    
+}
+.R1{
+    border: 2px solid black;
+    border-radius: 45px;
+    margin: 30px;
+    margin-top: 0px;
+}
+.R1 p{
+    padding: 5px;
+    margin: 30px;
+}
+.ref{
+    color: rgb(85, 85, 85);
+}
+footer{
+
+    text-align: center;
+}
+
+/* CSS Element */
+
+.project:last-child{
+    border-bottom: none;
+}
+
+.workExp:last-child{
+    border-bottom: none;
+}
+
+
+/* Media Queries */
+
+@media (max-width:1000px){
+    .logo{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo img{
+        align-self: center;
+    }
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .sec1{
+        font-size: 30px;
+        margin: 40px;
+    }
+    .box{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .box h3{
+        text-align: center;
+    }
+
+    .box1{
+                width: 100%;
+                text-align: center;
+                font-size: 20px;
+                
+    }
+    .project{
+                background-color:rgb(167, 168, 170);
+                padding: 0px;
+                margin: 0px;
+                height: 100%;
+    }
+   .box2{
+                width: 100%;
+                font-size: 20px;
+                
+    }
+
+    .workExp{
+        background-color: rgb(167, 168, 170);
+                        padding-left: 20px;
+
+    }
+       .box3{
+                width: 100%;
+               font-size: 20px;
+               padding: 20px;
+    }
+    .box3 p{
+        font-size: 15px;
+    }
+      .RT{
+            text-align: center;
+        }
+       
+    .Review{
+        flex-direction: column;
+    }
+
+}
